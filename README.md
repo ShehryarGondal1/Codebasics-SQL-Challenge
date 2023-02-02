@@ -32,43 +32,44 @@ __Data Defination__
 
 #### Table 1 <br>
 Column Description for __dim_customer table__:
-1. customer_code: The 'customer_code' column features unique identification codes for every customer in the dataset. These codes can be used to track a customer's sales 		history, demographic information, and other relevant details. For example, the codes could look like '70002017', '90005160', and '80007195' respectively.
+1. __customer_code__: The 'customer_code' column features unique identification codes for every customer in the dataset. These codes can be used to track a customer's sales 		history, demographic information, and other relevant details. For example, the codes could look like '70002017', '90005160', and '80007195' respectively.
 
-2. customer: The 'customer' column lists the names of customers, for example 'Atliq Exclusive', 'Flipkart', and 'Surface Stores' etc.
+2. __customer__: The 'customer' column lists the names of customers, for example 'Atliq Exclusive', 'Flipkart', and 'Surface Stores' etc.
 
-3. platform: The 'platform' column identifies the means by which a company's products or services are sold. "Brick & Mortar" represents the physical store/location, and 			"E-Commerce" represents online platforms.
+3. __platform__: The 'platform' column identifies the means by which a company's products or services are sold. "Brick & Mortar" represents the physical store/location, and 			"E-Commerce" represents online platforms.
 
-4. channel: The 'channel' column reflects the distribution methods used to sell a product. These methods include "Retailers", "Direct", and "Distributors". Retailers 				refer to physical or online stores that sell products to consumers. Direct sales refer to sales made directly to consumers through a company's website or other direct means, and distributors refer to intermediaries or middlemen between the manufacturer and retailer or end consumers.
+4. __channel__: The 'channel' column reflects the distribution methods used to sell a product. These methods include "Retailers", "Direct", and "Distributors". Retailers 				refer to physical or online stores that sell products to consumers. Direct sales refer to sales made directly to consumers through a company's website or other direct means, and distributors refer to intermediaries or middlemen between the manufacturer and retailer or end consumers.
 
-5. market: The 'market' column lists the countries in which the customer is located.
+5. __market__: The 'market' column lists the countries in which the customer is located.
 
-6. region: The 'region' column categorizes countries according to their geographic location, including "APAC" (Asia Pacific), "EU" (Europe), "NA" (North America), and 			    "LATAM" (Latin America).
+6. __region__: The 'region' column categorizes countries according to their geographic location, including "APAC" (Asia Pacific), "EU" (Europe), "NA" (North America), and 			    "LATAM" (Latin America).
 
-7. sub_zone: "The 'sub_zone' column further breaks down the regions into sub-regions, such as "India", "ROA" (Rest of Asia), "ANZ" (Australia and New Zealand), "SE" 	
+7. __sub_zone__: "The 'sub_zone' column further breaks down the regions into sub-regions, such as "India", "ROA" (Rest of Asia), "ANZ" (Australia and New Zealand), "SE" 	
 <br>
 
 
 #### Table 2 <br>
 Column Description for __dim_product table__:
-1. product_code: The 'product_code' column features unique identification codes for each product, serving as a means to track and distinguish individual products within a 		database or system.
 
-2. division: The 'division' column categorizes products into groups such as "P & A" (Peripherals and Accessories), "N & S" (Network and Storage) and "PC" (Personal 				 Computer).
+1. __product_code__: The 'product_code' column features unique identification codes for each product, serving as a means to track and distinguish individual products within a 		database or system.
 
-3. segment: The 'segment' column categorizes products further within the division, such as "Peripherals" (keyboard, mouse, monitor, etc.), "Accessories" (cases, cooling 			solutions, power supplies), "Notebook" (laptops), "Desktop" (desktops, all-in-one PCs, etc), "Storage" (hard disks, SSDs, external storage), and "Networking" (routers, switches, modems, etc.).
+2. __division__: The 'division' column categorizes products into groups such as "P & A" (Peripherals and Accessories), "N & S" (Network and Storage) and "PC" (Personal 				 Computer).
 
-4. category: The 'category' column classifies products into specific subcategories within the segment.
+3. __segment__: The 'segment' column categorizes products further within the division, such as "Peripherals" (keyboard, mouse, monitor, etc.), "Accessories" (cases, cooling 			solutions, power supplies), "Notebook" (laptops), "Desktop" (desktops, all-in-one PCs, etc), "Storage" (hard disks, SSDs, external storage), and "Networking" (routers, switches, modems, etc.).
 
-5. product: The 'product' column lists the names of individual products, corresponding to the unique identification codes found in the 'product_code' column.
+4. __category__: The 'category' column classifies products into specific subcategories within the segment.
 
-6. variant: The "variant" column classifies products according to their features, prices, and other characteristics. The column includes variants such as "Standard","Plus", "Premium" that represent different versions of the same product.
+5. __product__: The 'product' column lists the names of individual products, corresponding to the unique identification codes found in the 'product_code' column.
+
+6. __variant__: The "variant" column classifies products according to their features, prices, and other characteristics. The column includes variants such as "Standard","Plus", "Premium" that represent different versions of the same product.
 
 #### Table 3 <br>
 Column Description for __fact_gross_price table__:
-1. product_code: The 'product_code' column features unique identification codes for each product.
+1. __product_code__: The 'product_code' column features unique identification codes for each product.
 
-2. fiscal_year: The 'fiscal_year' column contains the fiscal period in which the product sale was recorded. A fiscal year is a 12-month period that is used for accounting 			purposes and often differs from the calendar year. For Atliq Hardware, the fiscal year starts in September. The data available in this column covers the 				fiscal years 2020 and 2021.
+2. __fiscal_year__: The 'fiscal_year' column contains the fiscal period in which the product sale was recorded. A fiscal year is a 12-month period that is used for accounting 			purposes and often differs from the calendar year. For Atliq Hardware, the fiscal year starts in September. The data available in this column covers the 				fiscal years 2020 and 2021.
 
-3. gross_price: The 'gross_price' column holds the initial price of a product, prior to any reductions or taxes. It is the original selling price of the product.
+3. __gross_price__: The 'gross_price' column holds the initial price of a product, prior to any reductions or taxes. It is the original selling price of the product.
 
 
 
@@ -84,26 +85,27 @@ raw materials, labor, and overhead expenses that are directly associated with th
 
 #### Table 5 <br>
 Column Description for __fact_pre_invoice_deductions__:
-1. customer_code: The 'customer_code' column features unique identification codes for every customer in the dataset. These codes can be used to track a customer's sales 			history, demographic information, and other relevant details. For example, the codes could look like '70002017', '90005160', and '80007195' respectively.
+1. __customer_code__: The 'customer_code' column features unique identification codes for every customer in the dataset. These codes can be used to track a customer's sales 			history, demographic information, and other relevant details. For example, the codes could look like '70002017', '90005160', and '80007195' respectively.
 
-2. fiscal_year: The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
+2. __fiscal_year__: The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 
-3. pre_invoice_discount_pct: The "pre_invoice_discount_pct" column contains the percentage of pre-invoice deductions for each product. Pre-invoice deductions are 
+3. __pre_invoice_discount_pct__: The "pre_invoice_discount_pct" column contains the percentage of pre-invoice deductions for each product. Pre-invoice deductions are 
 discounts that are applied to the gross price of a product before the invoice is generated, and typically applied to large orders or 
 
 #### Table 6 <br>
 Column Description for __fact_sales_monthly__:
-1. date: The "date" column contains the date when the sale of a product was made, in a monthly format for 2020 and 2021 fiscal years. This information can be used
+
+1. __date__: The "date" column contains the date when the sale of a product was made, in a monthly format for 2020 and 2021 fiscal years. This information can be used
 to understand the sales performance of products over time.
 
-2. product_code: The "product_code" column contains a unique identification code for each product. This code is used to track and differentiate individual 
+2. __product_code__: The "product_code" column contains a unique identification code for each product. This code is used to track and differentiate individual 
 products within a database or system.
 
-3. customer_code: The 'customer_code' column features unique identification codes for every customer in the dataset. These codes can be used to track a customer's sales 			history, demographic information, and other relevant details. For example, the codes could look like '70002017', '90005160', and '80007195' respectively.
+3. __customer_code__: The 'customer_code' column features unique identification codes for every customer in the dataset. These codes can be used to track a customer's sales 			history, demographic information, and other relevant details. For example, the codes could look like '70002017', '90005160', and '80007195' respectively.
 
-4. sold_quantity: The "sold_quantity" column contains the number of units of a product that were sold. This information can be used to understand the sales volume ofproducts and to compare the sales volume of different products or variants.
+4. __sold_quantity__: The "sold_quantity" column contains the number of units of a product that were sold. This information can be used to understand the sales volume ofproducts and to compare the sales volume of different products or variants.
 
-5. fiscal_year: The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
+5. __fiscal_year__: The "fiscal_year" column holds the fiscal period when the sale of a product occurred.
 <br>
 
 # <h2 id="link2">Database Schema</h2> <br>
@@ -115,14 +117,14 @@ products within a database or system.
 
 __Key Insights__ <br>
 
-*  The customer 'Atliq Exclusive' operates in 3 regions - APAC, EU, NA. In APAC region it operates its business in - Australia, Bangladesh, India, Indonesia, Japan, New Zealand, Philippines and South Korea. <br>
-* Unique_products in 2020 are 245 and Unique_Products in 2021 are 334.So,89 unique products were added in 2021. As a result, the percentage of unique product increase in 2021 vs. 2020 is 36.33%.<br>
+*  The customer 'Atliq Exclusive' operates in 3 regions - __APAC, EU, NA__. In APAC region it operates its business in - Australia, Bangladesh, India, Indonesia, Japan, New Zealand, Philippines and South Korea. <br>
+* Unique_products in 2020 are __245__ and Unique_Products in 2021 are __334__.So,__89 unique products__ were added in 2021. As a result, the percentage of unique product increase in 2021 vs. 2020 is __36.33%__.<br>
 *  The products are divided into 6 segments - Notebook, Accessories, Peripherals, Desktop, Storage and Networking.<br>
-* Notebook, Accessories and Peripherals are the top 3 segments by unique product count.<br>
+* __Notebook, Accessories and Peripherals__ are the top 3 segments by unique product count.<br>
 * Desktop, Storage and Networkings are the least 3 segments by unique product count.<br>
 * Accessories segment has the most increase and Networking segment has the least increase in unique products in 2021 vs 2020.<br>
-* AQ HOME Allin1 Gen 2 has highest manufacturing cost and AQ Master wired x1 Ms has lowest manufacturing cost.<br>
-* Top 5 customers who received an average high pre_invoice_discount_pct for the fiscal year 2021 and in the Indian market are - Flipkart, Viveks, Ezone, Croma, Amazon.<br>
+* __AQ HOME Allin1 Gen 2 has highest manufacturing cost__ and __AQ Master wired x1 Ms has lowest manufacturing cost__.<br>
+* Top 5 customers who received an average high pre_invoice_discount_pct for the fiscal year 2021 and in the Indian market are - __Flipkart, Viveks, Ezone, Croma, Amazon__.<br>
 * For the fiscal year, 2020, March was the least performing month and November was the highest performing month.<br>
 * Overall for 2019, 2020 and 2021, April was the least performing month and November was the highest performing month.<br>
 * Quarter 1 ('September', 'October', 'November') got the maximum total sold quantity.<br>
